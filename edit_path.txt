@@ -1,0 +1,4 @@
+#EXAMPLE OF ADDING VARIABLES TO PATH AFTER REACHING IT'S MAX LENGTH ON WINDOWS (POWESHELL SCRIPT)
+$PATH = [Environment]::GetEnvironmentVariable("PATH")
+$xampp_path = "C:\Ruby200-x64\bin"
+[Environment]::SetEnvironmentVariable("PATH", "$PATH;$xampp_path", "Machine")
