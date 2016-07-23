@@ -1,0 +1,8 @@
+.grouping:before {
+  content:"";
+  display: table;
+}
+.grouping:after {
+  @extend .grouping:before;
+  clear: both;
+}
