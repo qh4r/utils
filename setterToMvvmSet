@@ -1,0 +1,4 @@
+//Regex makeng it easy to change standard c# setter into one calling property changed (using mvvm light in this case)
+
+(^[\s]*)(this\.\S*)[\s=]+value
+$1this.Set(ref $2, value)
